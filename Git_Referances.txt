@@ -1,0 +1,82 @@
+
+
+##To create folder
+mkdir project
+
+##TO initialize empty repository
+git init
+
+##To see hidden files
+ls -a
+
+##To know the status 
+git status
+
+## Adding files
+git add names.txt
+git add ..
+
+
+##Commiting files
+git commit -m "names.txt file is added"
+
+##To edit file in command promt and save
+vi name.txt
+
+Press i or a to enter Insert Mode.
+
+press Esc
+:wq  -->Save and quit
+Type :w and press Enter to save the file.
+:w 
+
+##To view file data
+cat name.txt
+
+
+##Once you modified any file follow below commands
+git add name.txt
+
+##If you want to restore added file,by mistake
+
+git reset name.txt
+
+## To know the git history
+git log 
+
+git log <file_name>
+git log --author="Author Name"
+git log --author="maheswar189"
+git log --since="2023-01-01" --until="2023-12-31"
+
+## To delete file
+
+rm -rf name.txt
+git status
+git add .
+git commit -m "name.txt file is deleted"
+
+## Suppose if you deleted file by mistake then you want to go to deleted previous branch
+   with hashid
+git reset 1e8fb4ba3da631d97328638cf918e46c2d7fdda7 
+
+
+## To backstage our changes in code
+git stash
+
+## To get back changes in backstage area
+git stash pop 
+
+## To clear of backstage code changes
+git stash clear 
+
+##Create a new repository in git and we have to map to local project to new repo
+git remote add origin https://github.com/maheswar189/git-testing.git
+
+
+## To push our changes to specific origin
+git push origin master
+# To see attached repos to current local project
+git remote -v  
+
+ssh-keygen -t ed25519 -C "maheswarreddy189@gmail.com"
